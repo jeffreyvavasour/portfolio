@@ -1,0 +1,32 @@
+$font-main: 'Open Sans', sans-serif;
+$font-heading: 'Open Sans', sans-serif;
+$font-alt: 'Open Sans', sans-serif;
+
+body {
+    font-family: $font-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading;
+}
+
+h1 {
+    color: red;
+    @include media-min($mq-small) {
+        color: $primary-color;
+    }
+    @include media-min($mq-medium) {
+        color: $secondary-color;
+    }
+    @include media-min($mq-large) {
+        color: $tertiary-color;
+    }
+    @include media-min($mq-xlarge) {
+        color: aqua;
+    }
+}
