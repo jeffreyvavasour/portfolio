@@ -1,0 +1,64 @@
+.about {
+    h3 {
+        margin-top: 2rem;
+    }
+
+    &__image {
+        height: 400px;
+        width: 100%;
+        background-image: url('/dist/images/profile-pic.jpg');
+        background-size: cover;
+        background-position: center;
+
+        @include media-min($mq-medium) {
+            height: auto;
+        }
+    }
+
+    &__content {
+        flex-direction: column;
+        --gap: 2rem;
+
+        @include media-min($mq-medium) {
+            flex-direction: row;
+        }
+
+        &-content {
+            flex-direction: column;
+            justify-content: center;
+            --gap: 0;
+
+            @include media-min($mq-medium) {
+                padding-block: 2rem;
+            }
+            @include media-min($mq-large) {
+                padding-left: 5rem;
+            }
+        }
+    }
+
+    .skill-icons {
+        --gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .skill-icon {
+        flex-direction: column;
+        align-items: center;
+        --gap: 0.5rem;
+        --flow-space: 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .fa-brands {
+        // color: rgb(0, 0, 0);
+        font-size: 2rem;
+
+        @include media-min($mq-small) {
+            font-size: 3.5rem;
+        }
+    }
+}

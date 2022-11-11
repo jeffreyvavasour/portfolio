@@ -1,9 +1,11 @@
-$font-main: 'Open Sans', sans-serif;
-$font-heading: 'Open Sans', sans-serif;
+$font-main: 'Inter', sans-serif;
+$font-heading: 'Lora', sans-serif;
 $font-alt: 'Open Sans', sans-serif;
 
 body {
     font-family: $font-main;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 h1,
@@ -13,20 +15,48 @@ h4,
 h5,
 h6 {
     font-family: $font-heading;
+    line-height: 1;
 }
 
 h1 {
-    color: red;
-    @include media-min($mq-small) {
-        color: $primary-color;
-    }
+    font-weight: 700;
+    font-size: 3.5rem;
+
     @include media-min($mq-medium) {
-        color: $secondary-color;
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    position: relative;
+    margin-bottom: 3rem;
+
+    @include media-min($mq-medium) {
+        font-size: 2.5rem;
     }
     @include media-min($mq-large) {
-        color: $tertiary-color;
+        margin-bottom: 5rem;
     }
-    @include media-min($mq-xlarge) {
-        color: aqua;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100px;
+        bottom: -1rem;
+        left: 0;
+        background-color: $primary-color;
     }
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $primary-color;
+}
+
+p {
+    font-weight: 300;
 }

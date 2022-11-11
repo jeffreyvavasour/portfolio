@@ -1,4 +1,5 @@
 .nav {
+    z-index: 999;
     @include transition;
 
     &__list {
@@ -12,10 +13,6 @@
         @include media-max($mq-small) {
             margin-top: 65%;
         }
-    }
-
-    &__list-item {
-
     }
 
     &__link {

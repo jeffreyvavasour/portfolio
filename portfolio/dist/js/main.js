@@ -7,4 +7,9 @@ navToggle.addEventListener('click', function() {
     bars.forEach(bar => {
         bar.classList.toggle('change');
     })
+    if (nav.classList.contains('change')) {
+        navToggle.style.position = 'fixed';
+    } else {
+        navToggle.style.position = 'absolute';
+    }
 });

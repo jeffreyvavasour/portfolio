@@ -29,6 +29,10 @@
 @import 'sections/hero';
 @import 'sections/projects';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $tertiary-color;
     color: $secondary-color;
