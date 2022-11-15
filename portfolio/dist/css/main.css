@@ -140,7 +140,12 @@ p {
 }
 
 .section {
-  padding-block: 100px;
+  padding-block: 60px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-block: 100px;
+  }
 }
 
 .sr-only {
@@ -157,6 +162,132 @@ p {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.button {
+  border: 1px solid rgb(116, 127, 224);
+  background-color: rgb(116, 127, 224);
+  color: rgb(246, 249, 252);
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 480px) {
+  .button {
+    max-width: 200px;
+  }
+}
+.button a {
+  display: block;
+  padding: 1rem;
+}
+.button:hover {
+  background-color: rgb(246, 249, 252);
+  color: rgb(116, 127, 224);
+}
+
+.contact__box {
+  padding: 5rem 3rem;
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.contact__box-head {
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .contact__box-head {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact__box-head--headings {
+    width: 100%;
+  }
+}
+.contact__box-head--text p {
+  font-size: 0.95rem;
+}
+@media screen and (min-width: 480px) {
+  .contact__box-head--text p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .contact__box-head--text {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact__box-head--text {
+    width: 100%;
+    --flow-space: 0;
+    align-self: flex-end;
+  }
+}
+.contact__box-form {
+  margin-top: 3rem;
+  grid-template-areas: "firstname" "lastname" "email" "phone" "subject" "message" "submit";
+}
+@media screen and (min-width: 1024px) {
+  .contact__box-form {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "firstname    lastname   message message" "email   phone message message" "subject subject submit  submit";
+  }
+}
+.contact__box-form div {
+  --flow-space: 0;
+}
+@media screen and (min-width: 1024px) {
+  .contact__box-form textarea {
+    height: 100%;
+  }
+}
+.contact__box .first-name {
+  grid-area: firstname;
+}
+.contact__box .last-name {
+  grid-area: lastname;
+}
+.contact__box .email {
+  grid-area: email;
+}
+.contact__box .phone {
+  grid-area: phone;
+}
+.contact__box .subject {
+  grid-area: subject;
+}
+.contact__box .message {
+  grid-area: message;
+}
+.contact__box .submit {
+  grid-area: submit;
+}
+.contact h3 {
+  color: rgb(82, 95, 127);
+}
+.contact h5 {
+  font-weight: 700;
+}
+.contact hr {
+  height: 4px;
+  width: 80px;
+  background-color: rgb(116, 127, 224);
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.contact .submit input {
+  border: 1px solid rgb(116, 127, 224);
+  background-color: rgb(116, 127, 224);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.contact .submit input:hover {
+  background-color: white;
+  color: rgb(116, 127, 224);
 }
 
 .nav {
@@ -178,12 +309,20 @@ p {
     margin-top: 65%;
   }
 }
+.nav__list-item {
+  align-self: flex-start;
+}
 .nav__link {
   position: relative;
   transition: all 0.3s ease-in-out;
 }
 .nav__link:hover {
   color: rgb(116, 127, 224);
+}
+@media screen and (max-width: 1024px) {
+  .nav__link:hover {
+    color: rgb(82, 95, 127);
+  }
 }
 .nav__link::after {
   content: "";
@@ -199,6 +338,11 @@ p {
 }
 .nav__link:hover::after {
   transform: scaleX(100%);
+}
+@media screen and (max-width: 1024px) {
+  .nav__link:hover::after {
+    transform: scaleX(0);
+  }
 }
 @media screen and (max-width: 768px) {
   .nav {
@@ -304,6 +448,48 @@ p {
   }
 }
 
+.cv__buttons {
+  flex-direction: column;
+}
+
+.footer {
+  padding-block: 50px;
+  background-color: rgb(82, 95, 127);
+  color: white;
+  font-size: 16px;
+}
+.footer h5 {
+  color: white;
+}
+.footer h4 {
+  margin-bottom: 0.5rem;
+}
+.footer__container {
+  flex-wrap: wrap;
+  --gap: 2rem;
+  justify-content: space-between;
+}
+.footer__details {
+  max-width: 200px;
+}
+.footer__details h3 {
+  margin-bottom: 0.5rem;
+}
+.footer__details p {
+  margin-top: 0.25rem;
+}
+.footer__links {
+  max-width: 200px;
+  --gap: 1rem;
+}
+.footer__links-list {
+  flex-wrap: wrap;
+  --gap: 0.5rem;
+}
+.footer__socials {
+  --gap: 1rem;
+}
+
 .header {
   padding-block: 30px;
 }
@@ -401,6 +587,96 @@ p {
   .hero__scroll {
     bottom: 2rem;
   }
+}
+
+.projects .dartsscorer .projects__project-image {
+  background-image: url("/dist/images/darts-app-mobile.png");
+  background-position: center;
+}
+@media screen and (min-width: 1024px) {
+  .projects .dartsscorer .projects__project-image {
+    background-image: url("/dist/images/darts-app-laptop.png");
+  }
+}
+.projects .epn-landscapes .projects__project-image {
+  background-image: url("/dist/images/epn-landscapes-mobile.png");
+}
+@media screen and (min-width: 1024px) {
+  .projects .epn-landscapes .projects__project-image {
+    background-image: url("/dist/images/epn-landscapes-laptop.png");
+  }
+}
+.projects .mac-electrical .projects__project-image {
+  background-image: url("/dist/images/mac-electrical-mobile.png");
+}
+@media screen and (min-width: 1024px) {
+  .projects .mac-electrical .projects__project-image {
+    background-image: url("/dist/images/mac-electrical-laptop.png");
+  }
+}
+.projects .portfolio .projects__project-image {
+  background-image: url("/dist/images/portfolio-mobile.png");
+}
+@media screen and (min-width: 1024px) {
+  .projects .portfolio .projects__project-image {
+    background-image: url("/dist/images/portfolio-laptop.png");
+  }
+}
+.projects__project {
+  margin-bottom: 100px;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 1024px) {
+  .projects__project {
+    flex-direction: row;
+  }
+}
+.projects__project-image {
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+@media screen and (min-width: 1024px) {
+  .projects__project-image {
+    width: 30%;
+    height: auto;
+  }
+}
+.projects__project-content {
+  width: 100%;
+  padding: 35px;
+}
+@media screen and (min-width: 1024px) {
+  .projects__project-content {
+    width: 70%;
+    padding: 60px;
+  }
+}
+.projects .project-skill {
+  border-radius: 4px;
+  border: 2px solid #92eac0;
+  padding: 8px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.projects .project-buttons {
+  flex-wrap: wrap;
+  --flow-space: 0;
+  margin-top: 1rem;
+}
+.projects .project-buttons .button {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .projects .project-buttons .button {
+    max-width: 150px;
+  }
+}
+.projects .project-buttons .button a {
+  font-size: 0.95rem;
 }
 
 html {

@@ -1,0 +1,124 @@
+.contact {
+    &__box {
+        padding: 5rem 3rem;
+        box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+        &-head {
+            flex-direction: column;
+
+            @include media-min($mq-large) {
+                flex-direction: row;
+            }
+
+            &--headings {
+                @include media-min($mq-large) {
+                    width: 100%;
+                }
+            }
+
+            &--text {
+                p {
+                    font-size: 0.95rem;
+
+                    @include media-min($mq-small) {
+                        font-size: 18px;
+                    }
+                }
+                @include media-min($mq-small) {
+                    width: 70%;
+                }
+                @include media-min($mq-large) {
+                    width: 100%;
+                    --flow-space: 0;
+                    align-self: flex-end;
+                }
+            }
+        }
+
+        &-form {
+            margin-top: 3rem;
+            grid-template-areas: 
+                    "firstname"
+                    "lastname"
+                    "email"
+                    "phone"
+                    "subject"
+                    "message"
+                    "submit";
+
+            @include media-min($mq-large) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                    "firstname    lastname   message message"
+                    "email   phone message message"
+                    "subject subject submit  submit";
+            }
+
+            div {
+                --flow-space: 0;
+            }
+
+            textarea {
+                @include media-min($mq-large) {
+                    height: 100%;
+                }
+            }
+        }
+
+        .first-name {
+            grid-area: firstname;
+        }
+        .last-name {
+            grid-area: lastname;
+        }
+        .email {
+            grid-area: email;
+        }
+        .phone {
+            grid-area: phone;
+        }
+        .subject {
+            grid-area: subject;
+        }
+        .message {
+            grid-area: message;
+        }
+        .submit {
+            grid-area: submit;
+        }
+    }
+
+    h3 {
+        color: $secondary-color;
+    }
+
+    h5 {
+        font-weight: 700;
+    }
+
+    hr {
+        height: 4px;
+        width: 80px;
+        background-color: $primary-color;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #eee;
+    }
+
+    .submit input {
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        color: white;
+        cursor: pointer;
+        font-weight: 700;
+        @include transition;
+
+        &:hover {
+            background-color: white;
+            color: $primary-color;
+        }
+    }
+}

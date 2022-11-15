@@ -13,6 +13,10 @@
         @include media-max($mq-small) {
             margin-top: 65%;
         }
+
+        &-item {
+            align-self: flex-start;
+        }
     }
 
     &__link {
@@ -21,6 +25,10 @@
 
         &:hover {
             color: $primary-color;
+
+            @include media-max($mq-large) {
+                color: $secondary-color;
+            }
         }
 
         &::after {
@@ -38,6 +46,10 @@
 
         &:hover::after {
             transform: scaleX(100%);
+
+            @include media-max($mq-large) {
+                transform: scaleX(0);
+            }
         }
     }
 

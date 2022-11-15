@@ -1,0 +1,21 @@
+.button {
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    display: block;
+    @include transition;
+
+    @include media-min($mq-small) {
+        max-width: 200px;
+    }
+
+    a {
+        display: block;
+        padding: 1rem;
+    }
+
+    &:hover {
+        background-color: $tertiary-color;
+        color: $primary-color;
+    }
+}
