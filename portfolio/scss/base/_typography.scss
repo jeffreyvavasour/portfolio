@@ -47,14 +47,14 @@ h2 {
         width: 100px;
         bottom: -1rem;
         left: 0;
-        background-color: $primary-color;
+        background-color: var(--color-primary);
     }
 }
 
 h3 {
     font-size: 1.8rem;
     font-weight: 500;
-    color: $primary-color;
+    color: var(--color-primary);
 }
 
 p {

@@ -1,0 +1,75 @@
+#theme-toggle {
+    display: none;
+}
+
+label {
+    position: absolute;
+    height: 20px;
+    width: 38px;
+    top: 42%;
+    left: 20%;
+    border-radius: 22px;
+    background-color: var(--color-secondary);
+    cursor: pointer;
+
+    @include media-max($mq-small) {
+        left: 30%;
+    }
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    border-radius: 28px;
+    background-color: var(--color-primary);
+    transform: translateX(0);
+    @include transition;
+}
+
+#theme-toggle:checked + label::after {
+    left: 20px;
+}
+
+.dark {
+    --color-primary: #{$primary-color-dark};
+    --color-secondary: #{$secondary-color-dark};
+    --color-tertiary: #{$tertiary-color-dark};
+
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+
+    .hero h3 {
+        color: var(--color-tertiary);
+    }
+    .contact h3 {
+        color: var(--color-tertiary);
+    }
+    .contact__box {
+        box-shadow: #92eac0 0px -2px 6px 0px, #92eac0 0px 30px 60px -30px;
+    }
+    .projects__project {
+        box-shadow: 0px 0px 10px #92eac0, 0px 0px 10px #92eac0, 0px 0px 10px #92eac0, 0px 0px 10px #92eac0;
+    }
+    label {
+        background-color: var(--color-tertiary);
+    }
+    label::after {
+        background-color: var(--color-secondary);
+    }
+    .nav {
+        @include media-max($mq-medium) {
+            background-color: black;
+        }
+    }
+    .top-of-page {
+        background-color: var(--color-tertiary);
+
+        .fa {
+            color: var(--color-secondary);
+        }
+    }
+}

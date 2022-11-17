@@ -24,10 +24,10 @@
         @include transition;
 
         &:hover {
-            color: $primary-color;
+            color: var(--color-primary);
 
             @include media-max($mq-large) {
-                color: $secondary-color;
+                color: var(--color-secondary);
             }
         }
 
@@ -38,7 +38,7 @@
             left: 0;
             height: 4px;
             width: 100%;
-            background-color: $primary-color;
+            background-color: var(--color-primary);
             transform: scaleX(0);
             transform-origin: center;
             @include transition;

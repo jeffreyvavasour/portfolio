@@ -1,0 +1,25 @@
+.page {
+    .hero {
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        place-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.8;
+        }
+
+        h1 {
+            color: var(--color-tertiary);
+            position: absolute;
+        }
+    }
+}

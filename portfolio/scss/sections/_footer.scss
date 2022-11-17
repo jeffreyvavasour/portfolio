@@ -1,11 +1,11 @@
 .footer {
     padding-block: 50px;
-    background-color: $secondary-color;
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
     font-size: 16px;
 
     h5 {
-        color: white;
+        color: var(--color-tertiary);
     }
 
     h4 {

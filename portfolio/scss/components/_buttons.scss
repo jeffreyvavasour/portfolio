@@ -1,7 +1,7 @@
 .button {
-    border: 1px solid $primary-color;
-    background-color: $primary-color;
-    color: $tertiary-color;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
     display: block;
     @include transition;
 
@@ -15,7 +15,7 @@
     }
 
     &:hover {
-        background-color: $tertiary-color;
-        color: $primary-color;
+        background-color: var(--color-tertiary);
+        color: var(--color-primary);
     }
 }

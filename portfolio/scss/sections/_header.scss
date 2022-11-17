@@ -1,5 +1,6 @@
 .header {
     padding-block: 30px;
+    position: relative;
 
     &__logo {
         font-size: 2.5rem;
@@ -18,7 +19,7 @@
         @include transition;
 
         &:hover {
-            color: $primary-color;
+            color: var(--color-primary);
         }
     }
 }

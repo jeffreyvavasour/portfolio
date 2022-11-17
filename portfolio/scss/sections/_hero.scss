@@ -17,11 +17,11 @@
         }
 
         h1 {
-            color: $primary-color;
+            color: var(--color-primary);
         }
 
         h3 {
-            color: $secondary-color;
+            color: var(--color-secondary);
         }
 
         p {
@@ -51,19 +51,20 @@
         @include transition;
 
         &:hover {
-            color: $primary-color;
+            color: var(--color-primary);
         }
     }
 
     &__scroll {
         position: absolute;
         bottom: 1rem;
+        width: fit-content;
         margin-inline: auto;
         left: 0;
         right: 0;
         text-align: center;
         background-color: transparent;
-        color: $primary-color;
+        color: var(--color-primary);
 
         @include media-medium-and-large {
             bottom: 5rem;

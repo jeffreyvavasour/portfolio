@@ -19,8 +19,10 @@
 // import components partials
 @import 'components/buttons';
 @import 'components/contact-form';
+@import 'components/dark-mode';
 @import 'components/nav';
 @import 'components/nav-toggle';
+@import 'components/top-of-page-btn';
 // import sections partials
 @import 'sections/about';
 @import 'sections/contact';
@@ -29,12 +31,19 @@
 @import 'sections/header';
 @import 'sections/hero';
 @import 'sections/projects';
+// import pages partials
+@import 'pages/darts-scorer';
+@import 'pages/epn-landscapes';
+@import 'pages/mac-electrical';
+@import 'pages/pages';
+@import 'pages/portfolio';
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: $tertiary-color;
-    color: $secondary-color;
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    @include transition;
 }

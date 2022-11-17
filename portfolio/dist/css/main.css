@@ -53,6 +53,12 @@ h1 {
   line-height: 1.2;
 }
 
+:root {
+  --color-primary: rgb(116, 127, 224);
+  --color-secondary: rgb(82, 95, 127);
+  --color-tertiary: rgb(246, 249, 252);
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 20px;
@@ -102,13 +108,13 @@ h2::after {
   width: 100px;
   bottom: -1rem;
   left: 0;
-  background-color: rgb(116, 127, 224);
+  background-color: var(--color-primary);
 }
 
 h3 {
   font-size: 1.8rem;
   font-weight: 500;
-  color: rgb(116, 127, 224);
+  color: var(--color-primary);
 }
 
 p {
@@ -165,9 +171,9 @@ p {
 }
 
 .button {
-  border: 1px solid rgb(116, 127, 224);
-  background-color: rgb(116, 127, 224);
-  color: rgb(246, 249, 252);
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
   display: block;
   transition: all 0.3s ease-in-out;
 }
@@ -181,8 +187,8 @@ p {
   padding: 1rem;
 }
 .button:hover {
-  background-color: rgb(246, 249, 252);
-  color: rgb(116, 127, 224);
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
 }
 
 .contact__box {
@@ -262,7 +268,7 @@ p {
   grid-area: submit;
 }
 .contact h3 {
-  color: rgb(82, 95, 127);
+  color: var(--color-secondary);
 }
 .contact h5 {
   font-weight: 700;
@@ -270,7 +276,7 @@ p {
 .contact hr {
   height: 4px;
   width: 80px;
-  background-color: rgb(116, 127, 224);
+  background-color: var(--color-primary);
 }
 .contact input, .contact textarea {
   width: 100%;
@@ -278,16 +284,90 @@ p {
   border: 1px solid #eee;
 }
 .contact .submit input {
-  border: 1px solid rgb(116, 127, 224);
-  background-color: rgb(116, 127, 224);
-  color: white;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
   cursor: pointer;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
 }
 .contact .submit input:hover {
-  background-color: white;
-  color: rgb(116, 127, 224);
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
+
+#theme-toggle {
+  display: none;
+}
+
+label {
+  position: absolute;
+  height: 20px;
+  width: 38px;
+  top: 42%;
+  left: 20%;
+  border-radius: 22px;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  label {
+    left: 30%;
+  }
+}
+
+label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 2px;
+  border-radius: 28px;
+  background-color: var(--color-primary);
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+#theme-toggle:checked + label::after {
+  left: 20px;
+}
+
+.dark {
+  --color-primary: rgb(105, 25, 255);
+  --color-secondary: rgb(15, 25, 34);
+  --color-tertiary: rgb(184, 168, 214);
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
+}
+.dark .hero h3 {
+  color: var(--color-tertiary);
+}
+.dark .contact h3 {
+  color: var(--color-tertiary);
+}
+.dark .contact__box {
+  box-shadow: #92eac0 0px -2px 6px 0px, #92eac0 0px 30px 60px -30px;
+}
+.dark .projects__project {
+  box-shadow: 0px 0px 10px #92eac0, 0px 0px 10px #92eac0, 0px 0px 10px #92eac0, 0px 0px 10px #92eac0;
+}
+.dark label {
+  background-color: var(--color-tertiary);
+}
+.dark label::after {
+  background-color: var(--color-secondary);
+}
+@media screen and (max-width: 768px) {
+  .dark .nav {
+    background-color: black;
+  }
+}
+.dark .top-of-page {
+  background-color: var(--color-tertiary);
+}
+.dark .top-of-page .fa {
+  color: var(--color-secondary);
 }
 
 .nav {
@@ -317,11 +397,11 @@ p {
   transition: all 0.3s ease-in-out;
 }
 .nav__link:hover {
-  color: rgb(116, 127, 224);
+  color: var(--color-primary);
 }
 @media screen and (max-width: 1024px) {
   .nav__link:hover {
-    color: rgb(82, 95, 127);
+    color: var(--color-secondary);
   }
 }
 .nav__link::after {
@@ -331,7 +411,7 @@ p {
   left: 0;
   height: 4px;
   width: 100%;
-  background-color: rgb(116, 127, 224);
+  background-color: var(--color-primary);
   transform: scaleX(0);
   transform-origin: center;
   transition: all 0.3s ease-in-out;
@@ -370,7 +450,7 @@ p {
   height: 5px;
   margin: 6px 0;
   transition: 0.4s;
-  background-color: rgb(116, 127, 224);
+  background-color: var(--color-primary);
 }
 .mobile-nav-toggle .bar-1.change {
   transform: translate(0, 11px) rotate(-45deg);
@@ -385,6 +465,24 @@ p {
   .mobile-nav-toggle {
     display: block;
   }
+}
+
+.top-of-page {
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  border: 1px solid var(--color-tertiary);
+  z-index: 999;
+  cursor: pointer;
+  place-items: center;
+}
+.top-of-page .fa {
+  color: var(--color-primary);
 }
 
 .about h3 {
@@ -454,12 +552,12 @@ p {
 
 .footer {
   padding-block: 50px;
-  background-color: rgb(82, 95, 127);
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
   font-size: 16px;
 }
 .footer h5 {
-  color: white;
+  color: var(--color-tertiary);
 }
 .footer h4 {
   margin-bottom: 0.5rem;
@@ -492,6 +590,7 @@ p {
 
 .header {
   padding-block: 30px;
+  position: relative;
 }
 .header__logo {
   font-size: 2.5rem;
@@ -509,7 +608,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 .header__logo:hover {
-  color: rgb(116, 127, 224);
+  color: var(--color-primary);
 }
 
 .hero {
@@ -533,10 +632,10 @@ p {
   }
 }
 .hero__content h1 {
-  color: rgb(116, 127, 224);
+  color: var(--color-primary);
 }
 .hero__content h3 {
-  color: rgb(82, 95, 127);
+  color: var(--color-secondary);
 }
 .hero__content p {
   width: 90%;
@@ -566,17 +665,20 @@ p {
   transition: all 0.3s ease-in-out;
 }
 .hero__socials a:hover {
-  color: rgb(116, 127, 224);
+  color: var(--color-primary);
 }
 .hero__scroll {
   position: absolute;
   bottom: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-inline: auto;
   left: 0;
   right: 0;
   text-align: center;
   background-color: transparent;
-  color: rgb(116, 127, 224);
+  color: var(--color-primary);
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   .hero__scroll {
@@ -679,11 +781,50 @@ p {
   font-size: 0.95rem;
 }
 
+.darts-scorer-page .hero {
+  background-image: url("../../dist/images/darts-app-mobile.png");
+}
+
+.epn-landscapes-page .hero {
+  background-image: url("../../dist/images/epn-landscapes-mobile.png");
+}
+
+.mac-electrical-page .hero {
+  background-image: url("../../dist/images/mac-electrical-mobile.png");
+}
+
+.page .hero {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  place-items: center;
+}
+.page .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+.page .hero h1 {
+  color: var(--color-tertiary);
+  position: absolute;
+}
+
+.portfolio-page .hero {
+  background-image: url("../../dist/images/portfolio-mobile.png");
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: rgb(246, 249, 252);
-  color: rgb(82, 95, 127);
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */

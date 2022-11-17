@@ -89,7 +89,7 @@
     }
 
     h3 {
-        color: $secondary-color;
+        color: var(--color-secondary);
     }
 
     h5 {
@@ -99,7 +99,7 @@
     hr {
         height: 4px;
         width: 80px;
-        background-color: $primary-color;
+        background-color: var(--color-primary);
     }
 
     input, textarea {
@@ -109,16 +109,16 @@
     }
 
     .submit input {
-        border: 1px solid $primary-color;
-        background-color: $primary-color;
-        color: white;
+        border: 1px solid var(--color-primary);
+        background-color: var(--color-primary);
+        color: var(--color-tertiary);
         cursor: pointer;
         font-weight: 700;
         @include transition;
 
         &:hover {
-            background-color: white;
-            color: $primary-color;
+            background-color: var(--color-tertiary);
+            color: var(--color-primary);
         }
     }
 }

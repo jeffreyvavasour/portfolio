@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#header" class="top-of-page">
+        <i class="fa fa-chevron-up"></i>
+    </a>
     <header class="header container" id="header">
         <div class="header__content flex">
             <button class="mobile-nav-toggle" id="mobile-nav-toggle">
@@ -21,6 +24,8 @@
                 <div class="bar bar-3" id="bar-3"></div>
             </button>
             <a class="header__logo" href="#header">JV</a>
+            <input type="checkbox" name="theme-toggle" id="theme-toggle">
+            <label for="theme-toggle" id="dark-mode"></label>
             <nav class="nav" id="nav">
                 <ul class="nav__list flex" id="ul">
                     <li class="nav__list-item"><a href="#header" class="nav__link capitalize">home</a></li>
@@ -36,7 +41,7 @@
         <div class="hero__content flow">
             <h3>Hi, I'm Jeff...</h3>
             <h1 class="capitalize">front end developer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et, sit aut laborum excepturi culpa animi nulla minima tenetur illo.</p>
+            <p>Aspiring web developer, enjoying the journey, with a keen interest in learning new technologies. </p>
             <div class="hero__socials flex">
                 <a href="https://www.linkedin.com/in/jeffrey-vavasour-b98031175/" target="_blank">
                     <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
@@ -77,8 +82,8 @@
                     </div>
                 </div>
                 <h3>I love to learn</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vitae vel reprehenderit molestias qui doloribus impedit recusandae quibusdam explicabo at.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vitae vel reprehenderit molestias qui doloribus impedit recusandae quibusdam explicabo at.</p>
+                <p>After discovering my passion for web development, I couldn't get enough. I made websites for friends and family, and hired myself out as a freelancer. I'm looking forward to bringing that passion to a full-time role</p>
+                <p>I enjoy solving problems and taking on difficult tasks. An innate curiosity always pushes me to learn new things. I am excited to pursue a career as a frontend developer.</p>
             </div>
         </div>
     </section>
@@ -90,7 +95,8 @@
             </div>
             <div class="projects__project-content flow">
                 <h3 class="capitalize">dart scorer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsam consequuntur dolor sapiente earum expedita, officiis, ducimus, amet ut distinctio iusto sed quia. Magnam ipsa hic, possimus alias, porro nesciunt odio quis obcaecati inventore architecto commodi iste cupiditate, amet reprehenderit.</p>
+                <p>This is a two player darts scoring application. Users can set the score limits to 501 or 301. It will provide previous scores hit and also possible checkouts. It will not allow impossible scores, impossible checkouts or empty inputs.</p>
+                <p>Users can choose how many sets and legs they wish to play for. After the match has finished, users will have the options to look up match statistics, play again or go to the home screen.</p>
                 <div class="project-skills">
                     <span class="project-skill">
                         HTML5
@@ -110,7 +116,7 @@
                         <a href="https://github.com/jeffreyvavasour/jeffreyvavasour.github.io" target="_blank" class="capitalize"><i class="fa fa-github"></i> source code</a>
                     </div>
                     <div class="button">
-                        <a href="#" class="capitalize">more info</a>
+                        <a href="dist/html/darts-scorer.html" class="capitalize">more info</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +127,7 @@
             </div>
             <div class="projects__project-content flow">
                 <h3 class="capitalize">EPN Landscapes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsam consequuntur dolor sapiente earum expedita, officiis, ducimus, amet ut distinctio iusto sed quia. Magnam ipsa hic, possimus alias, porro nesciunt odio quis obcaecati inventore architecto commodi iste cupiditate, amet reprehenderit.</p>
+                <p>This is a commercial website built for a landscaping company. It showcases the company's services and previous projects, along with the company's description and work standards.</p>
                 <div class="project-skills">
                     <span class="project-skill">
                         HTML5
@@ -141,7 +147,7 @@
                         <a href="https://github.com/jeffreyvavasour/landscape" target="_blank" class="capitalize"><i class="fa fa-github"></i> source code</a>
                     </div>
                     <div class="button">
-                        <a href="#" class="capitalize">more info</a>
+                        <a href="dist/html/epn-landscapes.html" class="capitalize">more info</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +158,7 @@
             </div>
             <div class="projects__project-content flow">
                 <h3 class="capitalize">MAC Electrical</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsam consequuntur dolor sapiente earum expedita, officiis, ducimus, amet ut distinctio iusto sed quia. Magnam ipsa hic, possimus alias, porro nesciunt odio quis obcaecati inventore architecto commodi iste cupiditate, amet reprehenderit.</p>
+                <p>This is a live commercial website for an electrician. It showcases the main services provided along with the company's history and work standards.</p>
                 <div class="project-skills">
                     <span class="project-skill">
                         HTML5
@@ -172,7 +178,7 @@
                         <a href="https://github.com/jeffreyvavasour/MAC/tree/main/mac-electrical" target="_blank" class="capitalize"><i class="fa fa-github"></i> source code</a>
                     </div>
                     <div class="button">
-                        <a href="#" class="capitalize">more info</a>
+                        <a href="dist/html/mac-electrical.html" class="capitalize">more info</a>
                     </div>
                 </div>
             </div>
@@ -183,7 +189,7 @@
             </div>
             <div class="projects__project-content flow">
                 <h3 class="capitalize">Portfolio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsam consequuntur dolor sapiente earum expedita, officiis, ducimus, amet ut distinctio iusto sed quia. Magnam ipsa hic, possimus alias, porro nesciunt odio quis obcaecati inventore architecto commodi iste cupiditate, amet reprehenderit.</p>
+                <p>My personal portfolio containing previous projects and information about myself and my skills.</p>
                 <div class="project-skills">
                     <span class="project-skill">
                         HTML5
@@ -200,7 +206,7 @@
                         <a href="https://github.com/jeffreyvavasour/portfolio" target="_blank" class="capitalize"><i class="fa fa-github"></i> source code</a>
                     </div>
                     <div class="button">
-                        <a href="#" class="capitalize">more info</a>
+                        <a href="dist/html/portfolio.html" class="capitalize">more info</a>
                     </div>
                 </div>
             </div>
