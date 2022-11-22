@@ -784,13 +784,22 @@ label::after {
 .darts-scorer-page .hero {
   background-image: url("../../dist/images/darts-app-mobile.png");
 }
+.darts-scorer-page .description__image {
+  background-image: url("../../dist/images/darts-app-mobile.png");
+}
 
 .epn-landscapes-page .hero {
   background-image: url("../../dist/images/epn-landscapes-mobile.png");
 }
+.epn-landscapes-page .description__image {
+  background-image: url("../../dist/images/epn-landscapes-laptop.png");
+}
 
 .mac-electrical-page .hero {
   background-image: url("../../dist/images/mac-electrical-mobile.png");
+}
+.mac-electrical-page .description__image {
+  background-image: url("../../dist/images/mac-electrical-laptop.png");
 }
 
 .page .hero {
@@ -814,9 +823,101 @@ label::after {
   color: var(--color-tertiary);
   position: absolute;
 }
+.page .description__content {
+  flex-direction: column;
+  --gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .page .description__content {
+    flex-direction: row;
+  }
+}
+.page .description__content-content {
+  flex-direction: column;
+  justify-content: center;
+  --gap: 0;
+}
+@media screen and (min-width: 768px) {
+  .page .description__content-content {
+    width: 65%;
+    padding-block: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page .description__content-content {
+    padding-left: 5rem;
+  }
+}
+.page .description__image {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .page .description__image {
+    width: 35%;
+    height: auto;
+  }
+}
+.page .description .skill-icons {
+  --gap: 1rem;
+  justify-content: space-between;
+}
+.page .description .skill-icon {
+  flex-direction: column;
+  align-items: center;
+  --gap: 0.5rem;
+  --flow-space: 0;
+}
+.page .description .skill-icon p {
+  font-size: 16px;
+}
+.page .description .fa-brands {
+  font-size: 2rem;
+}
+@media screen and (min-width: 480px) {
+  .page .description .fa-brands {
+    font-size: 3.5rem;
+  }
+}
+.page h4 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.page .methods img,
+.page .lessons img {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .page .methods img,
+.page .lessons img {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page .methods .images,
+.page .lessons .images {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.page .method,
+.page .lesson {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .page .method,
+.page .lesson {
+    width: 60%;
+  }
+}
 
 .portfolio-page .hero {
   background-image: url("../../dist/images/portfolio-mobile.png");
+}
+.portfolio-page .description__image {
+  background-image: url("../../dist/images/portfolio-laptop.png");
 }
 
 html {

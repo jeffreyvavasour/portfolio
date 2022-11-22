@@ -2,4 +2,11 @@
     .hero {
         background-image: url('../../dist/images/mac-electrical-mobile.png');
     }
+
+    .description {
+
+        &__image {
+            background-image: url('../../dist/images/mac-electrical-laptop.png');
+        }
+    }
 }

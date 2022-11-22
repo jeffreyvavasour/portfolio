@@ -40,12 +40,12 @@
     <div class="hero grid">
         <h1>Darts App</h1>
     </div>
-    <section class="about section container about__container" id="about">
-        <div class="about__content flex">
-            <div class="about__image">
+    <section class="description section container description__container" id="description">
+        <div class="description__content flex">
+            <div class="description__image">
 
             </div>
-            <div class="about__content-content flex flow">
+            <div class="description__content-content flex flow">
                 <div class="skill-icons flex">
                     <div class="skill-icon flex">
                         <i class="fa-brands fa-html5 fa-3x"></i>
@@ -61,24 +61,63 @@
                     </div>
                 </div>
                 <h3>Lets play darts!</h3>
-                <p>After discovering my passion for web development, I couldn't get enough. I made websites for friends and family, and hired myself out as a freelancer. I'm looking forward to bringing that passion to a full-time role</p>
-                <p>I enjoy solving problems and taking on difficult tasks. An innate curiosity always pushes me to learn new things. I am excited to pursue a career as a frontend developer.</p>
+                <p>This is a two player darts scoring application. Users can set the score limits to 501 or 301. It will provide previous scores hit and also possible checkouts. It will not allow impossible scores, impossible checkouts or empty inputs.</p>
+                <p>Users can choose how many sets and legs they wish to play for. After the match has finished, users will have the options to look up match statistics, play again or go to the home screen.</p>
+                <div class="button">
+                    <a href="http://dartsscorer.tech/" target="_blank" class="capitalize">live site <i class="fa fa-up-right-from-square"></i></a>
+                </div>
             </div>
         </div>
     </section>
     <section class="methods section container methods__container">
-        <h3>Methods Used</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias tenetur animi, nesciunt culpa voluptates eius! Sequi architecto quaerat debitis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit cumque magni nesciunt qui architecto, nihil nisi dolore provident ex enim?</p>
-        <img src="../images/darts-app-laptop.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum vero sed reiciendis vitae iure officiis necessitatibus doloremque ipsam laudantium!</p>
+        <h2>Methods Used</h2>
+        <div class="method">
+            <h4>Functions</h4>
+            <p>Increased readability and modularity throughout the program. Also decreased the repetitiveness of the code where possible.</p>
+        </div>
+        <div class="method">
+            <h4>Objects</h4>
+            <p>Custom made objects were used to check for possible checkouts when a certain score was reached. The objects were iterated over, looking for a value to be matched, and assigned the key to an output to give the user their best possible checkout route.</p>
+        </div>
+        <div class="method">
+            <h4>Global Arrays</h4>
+            <p>Utilised for checking impossible scores, impossible finishes and assigning each players' scores list</p>
+        </div>
+        <div class="method">
+            <h4>Global Variables</h4>
+            <p>Were used for things such as: points, legs, sets and statistics; which had to be updated constantly</p>
+        </div>
+        <div class="method">
+            <h4>Modals</h4>
+            <p>Allowed different screens to be accessed, without having to refresh the page, when working with this Single Page Application.</p>
+        </div>
+        <div class="method">
+            <h4>Comments</h4>
+            <P>Increased readability and broke the code up into sections</P>
+        </div>
+        <div class="images">
+            <img src="../images/darts-app-one.png" alt="">
+            <img src="../images/darts-app-two.png" alt="">
+        </div>
     </section>
-    <section class="skills section container skills__container">
-        <h3>Skills Gained</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias tenetur animi, nesciunt culpa voluptates eius! Sequi architecto quaerat debitis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit cumque magni nesciunt qui architecto, nihil nisi dolore provident ex enim?</p>
-        <img src="../images/darts-app-laptop.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum vero sed reiciendis vitae iure officiis necessitatibus doloremque ipsam laudantium!</p>
+    <section class="lessons section container lessons__container">
+        <h2>Lessons Learned</h2>
+        <div class="lesson">
+            <h4>Readability</h4>
+            <p>This project increased my awareness of fundamental approaches to be taken when creating a program. Breaking the code down into smaller functions keeps the program structured, understandable, and reusable. Using clear variable names along with utilising comments enhances readability.</p>
+        </div>
+        <div class="lesson">
+            <h4>Refactoring</h4>
+            <p>Refactoring the project after a couple of months away was an invaluable experience. It changed the way I thought about the implementation and gave me different perspectives on the software. Refactoring improves the design of the software, makes the software easier to understand, helps to find bugs and also helps in executing the program faster.</p>
+        </div>
+        <div class="lesson">
+            <h4>Continuous Testing</h4>
+            <p>Constant testing of the application was necessary to not miss any bugs or unwanted behaviours in the application.</p>
+        </div>
+        <div class="images">
+            <img src="../images/darts-app-three.png" alt="">
+            <img src="../images/darts-app-four.png" alt="">
+        </div>
     </section>
     <footer class="footer">
         <div class="container footer__container flex">

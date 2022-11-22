@@ -1,10 +1,8 @@
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const nav = document.querySelector('.nav');
 const bars = document.querySelectorAll('.bar');
-
 const themeToggle = document.querySelector('#dark-mode');
 const body = document.querySelector('body');
-
 const topOfPage = document.querySelector('.top-of-page');
 
 navToggle.addEventListener('click', function() {

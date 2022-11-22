@@ -2,4 +2,11 @@
     .hero {
         background-image: url('../../dist/images/portfolio-mobile.png');
     }
+
+    .description {
+
+        &__image {
+            background-image: url('../../dist/images/portfolio-laptop.png');
+        }
+    }
 }
