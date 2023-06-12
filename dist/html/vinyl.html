@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeffrey Vavasour Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3cfde07445.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="vinyl-page page">
+    <a href="#header" class="top-of-page">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+    <header class="header container" id="header">
+      <div class="header__content flex">
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <div class="bar bar-1" id="bar-1"></div>
+          <div class="bar bar-2" id="bar-2"></div>
+          <div class="bar bar-3" id="bar-3"></div>
+        </button>
+        <a class="header__logo" href="../../index.html">JV</a>
+        <input type="checkbox" name="theme-toggle" id="theme-toggle" />
+        <label for="theme-toggle" id="dark-mode"></label>
+        <nav class="nav" id="nav">
+          <ul class="nav__list flex" id="ul">
+            <li class="nav__list-item">
+              <a href="../../index.html" class="nav__link capitalize">home</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="../../index.html#about" class="nav__link capitalize"
+                >about</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a href="../../index.html#projects" class="nav__link capitalize"
+                >projects</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a href="../../index.html#contact" class="nav__link capitalize"
+                >contact</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a href="../../index.html#cv" class="nav__link capitalize">cv</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="hero grid">
+      <h1>E-commerce Site</h1>
+    </div>
+    <section
+      class="description section container description__container"
+      id="description"
+    >
+      <div class="description__content flex">
+        <div class="description__image"></div>
+        <div class="description__content-content flex flow">
+          <div class="skill-icons flex">
+            <div class="skill-icon flex">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <p>HTML5</p>
+            </div>
+            <div class="skill-icon flex">
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <p>SASS</p>
+            </div>
+            <div class="skill-icon flex">
+              <i class="fa-brands fa-js fa-3x"></i>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <h3>Vinyl Sale!</h3>
+          <p>
+            An E-commerce site for the sale of vinyl records. A cart
+            functionality was implemented to store users products. An image
+            carousel is used for each of the products.
+          </p>
+          <p>
+            The purchase of products has not yet been implemented. This is
+            something I look forward to utilising in the near future.
+          </p>
+          <div class="button">
+            <a
+              href="http://vavaproject.site/"
+              target="_blank"
+              class="capitalize"
+              >live site <i class="fa fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="methods section container methods__container">
+      <h2>Methods Used</h2>
+      <div class="method">
+        <h4>Functions</h4>
+        <p>
+          Increased readability and modularity throughout the program. Also
+          decreased the repetitiveness of the code where possible.
+        </p>
+      </div>
+      <div class="method">
+        <h4>Class'</h4>
+        <p>
+          Used a Class to create new cart item objects. These objects were then
+          iterated over to produce the cart items.
+        </p>
+      </div>
+      <div class="method">
+        <h4>Global Array</h4>
+        <p>
+          Utilised for storing data for each individual product. Then accessed
+          this data for implementation of each product and use of information.
+        </p>
+      </div>
+      <div class="method">
+        <h4>Carousel's</h4>
+        <p>
+          Carousels were used for each product to showcase the product images.
+        </p>
+      </div>
+      <div class="method">
+        <h4>Modals</h4>
+        <p>
+          Allowed different screens to be accessed, without having to refresh
+          the page.
+        </p>
+      </div>
+      <div class="method">
+        <h4>Comments</h4>
+        <p>Increased readability and broke the code up into sections</p>
+      </div>
+      <div class="images">
+        <img src="../images/vinyl-one.png" alt="" />
+        <img src="../images/vinyl-two.png" alt="" />
+      </div>
+    </section>
+    <section class="lessons section container lessons__container">
+      <h2>Lessons Learned</h2>
+      <div class="lesson">
+        <h4>Readability</h4>
+        <p>
+          This project increased my awareness of fundamental approaches to be
+          taken when creating a program. Breaking the code down into smaller
+          functions keeps the program structured, understandable, and reusable.
+          Using clear variable names along with utilising comments enhances
+          readability.
+        </p>
+      </div>
+      <div class="lesson">
+        <h4>Refactoring</h4>
+        <p>
+          Refactoring the project after a couple of months away was an
+          invaluable experience. It changed the way I thought about the
+          implementation and gave me different perspectives on the software.
+          Refactoring improves the design of the software, makes the software
+          easier to understand, helps to find bugs and also helps in executing
+          the program faster.
+        </p>
+      </div>
+      <div class="lesson">
+        <h4>Continuous Testing</h4>
+        <p>
+          Constant testing of the application was necessary to not miss any bugs
+          or unwanted behaviours in the application.
+        </p>
+      </div>
+      <div class="images">
+        <img src="../images/vinyl-three.png" alt="" />
+        <img src="../images/vinyl-four.png" alt="" />
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container flex">
+        <div class="footer__details">
+          <h3 class="uppercase">jeffrey vavasour</h3>
+          <p>jeffreyvavasour@gmail.com</p>
+          <p>083 185 6498</p>
+        </div>
+        <div class="footer__links">
+          <h4 class="capitalize">links</h4>
+          <ul class="footer__links-list flex">
+            <li class="footer__links-list--item">
+              <a
+                href="../../index.html"
+                class="footer__links-list-link capitalize"
+                >home</a
+              >
+            </li>
+            <li class="footer__links-list--item">
+              <a
+                href="../../index.html#about"
+                class="footer__links-list-link capitalize"
+                >about</a
+              >
+            </li>
+            <li class="footer__links-list--item">
+              <a
+                href="../../index.html#projects"
+                class="footer__links-list-link capitalize"
+                >projects</a
+              >
+            </li>
+            <li class="footer__links-list--item">
+              <a
+                href="../../index.html#contact"
+                class="footer__links-list-link capitalize"
+                >contact</a
+              >
+            </li>
+            <li class="footer__links-list--item">
+              <a
+                href="../../index.html#cv"
+                class="footer__links-list-link capitalize"
+                >CV</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <h4 class="capitalize">socials</h4>
+          <div class="footer__socials-links flex">
+            <a
+              href="https://www.linkedin.com/in/jeffrey-vavasour-b98031175/"
+              target="_blank"
+            >
+              <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/jeffreyvavasour" target="_blank">
+              <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:jeffreyvavasour@gmail.com" target="_blank">
+              <i class="fa fa-2x fa-envelope-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../../dist/js/main.js"></script>
+  </body>
+</html>

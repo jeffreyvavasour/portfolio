@@ -690,6 +690,15 @@ label::after {
   }
 }
 
+.projects .vinyl .projects__project-image {
+  background-image: url("/dist/images/vinyl-mobile.png");
+  background-position: center;
+}
+@media screen and (min-width: 1024px) {
+  .projects .vinyl .projects__project-image {
+    background-image: url("/dist/images/vinyl-laptop.png");
+  }
+}
 .projects .dartsscorer .projects__project-image {
   background-image: url("/dist/images/darts-app-mobile.png");
   background-position: center;
@@ -778,6 +787,13 @@ label::after {
 }
 .projects .project-buttons .button a {
   font-size: 0.95rem;
+}
+
+.vinyl-page .hero {
+  background-image: url("../../dist/images/vinyl-mobile.png");
+}
+.vinyl-page .description__image {
+  background-image: url("../../dist/images/vinyl-mobile.png");
 }
 
 .darts-scorer-page .hero {

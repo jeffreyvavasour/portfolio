@@ -1,0 +1,11 @@
+.vinyl-page {
+  .hero {
+    background-image: url("../../dist/images/vinyl-mobile.png");
+  }
+
+  .description {
+    &__image {
+      background-image: url("../../dist/images/vinyl-mobile.png");
+    }
+  }
+}

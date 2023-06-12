@@ -1,49 +1,50 @@
 // import abstract partials
-@import 'abstract/colors';
-@import 'abstract/functions';
-@import 'abstract/mixins';
+@import "abstract/colors";
+@import "abstract/functions";
+@import "abstract/mixins";
 // import base partials
-@import 'base/reset';
-@import 'base/responsive';
-@import 'base/root';
-@import 'base/typography';
+@import "base/reset";
+@import "base/responsive";
+@import "base/root";
+@import "base/typography";
 // import utilities partials
-@import 'utilities/capitalize';
-@import 'utilities/container';
-@import 'utilities/flex';
-@import 'utilities/flow';
-@import 'utilities/grid';
-@import 'utilities/section';
-@import 'utilities/sr-only';
-@import 'utilities/uppercase';
+@import "utilities/capitalize";
+@import "utilities/container";
+@import "utilities/flex";
+@import "utilities/flow";
+@import "utilities/grid";
+@import "utilities/section";
+@import "utilities/sr-only";
+@import "utilities/uppercase";
 // import components partials
-@import 'components/buttons';
-@import 'components/contact-form';
-@import 'components/dark-mode';
-@import 'components/nav';
-@import 'components/nav-toggle';
-@import 'components/top-of-page-btn';
+@import "components/buttons";
+@import "components/contact-form";
+@import "components/dark-mode";
+@import "components/nav";
+@import "components/nav-toggle";
+@import "components/top-of-page-btn";
 // import sections partials
-@import 'sections/about';
-@import 'sections/contact';
-@import 'sections/cv';
-@import 'sections/footer';
-@import 'sections/header';
-@import 'sections/hero';
-@import 'sections/projects';
+@import "sections/about";
+@import "sections/contact";
+@import "sections/cv";
+@import "sections/footer";
+@import "sections/header";
+@import "sections/hero";
+@import "sections/projects";
 // import pages partials
-@import 'pages/darts-scorer';
-@import 'pages/epn-landscapes';
-@import 'pages/mac-electrical';
-@import 'pages/pages';
-@import 'pages/portfolio';
+@import "pages/vinyl";
+@import "pages/darts-scorer";
+@import "pages/epn-landscapes";
+@import "pages/mac-electrical";
+@import "pages/pages";
+@import "pages/portfolio";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--color-tertiary);
-    color: var(--color-secondary);
-    @include transition;
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+  @include transition;
 }
