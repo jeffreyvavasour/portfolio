@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Vavasour Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3cfde07445.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="mac-electrical-page page">
+    <a href="#header" class="top-of-page">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <header class="header container" id="header">
+        <div class="header__content flex">
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+                <div class="bar bar-1" id="bar-1"></div>
+                <div class="bar bar-2" id="bar-2"></div>
+                <div class="bar bar-3" id="bar-3"></div>
+            </button>
+            <a class="header__logo" href="../../index.html">JV</a>
+            <input type="checkbox" name="theme-toggle" id="theme-toggle">
+            <label for="theme-toggle" id="dark-mode"></label>
+            <nav class="nav" id="nav">
+                <ul class="nav__list flex" id="ul">
+                    <li class="nav__list-item"><a href="../../index.html" class="nav__link capitalize">home</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#about" class="nav__link capitalize">about</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#projects" class="nav__link capitalize">projects</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#contact" class="nav__link capitalize">contact</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#cv" class="nav__link capitalize">cv</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero grid">
+        <h1>MAC Electrical</h1>
+    </div>
+    <section class="description section container description__container" id="description">
+        <div class="description__content flex">
+            <div class="description__image">
+
+            </div>
+            <div class="description__content-content flex flow">
+                <div class="skill-icons flex">
+                    <div class="skill-icon flex">
+                        <i class="fa-brands fa-html5 fa-3x"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-icon flex">
+                        <i class="fa-brands fa-css3-alt fa-3x"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-icon flex">
+                        <i class="fa-brands fa-js fa-3x"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <h3>Electrician Website</h3>
+                <p>This is a live commercial website for an electrician. It showcases the main services provided along with the company's history and work standards.</p>
+                <div class="button">
+                    <a href="https://jeffsproject.com" target="_blank" class="capitalize">live site <i class="fa fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="methods section container methods__container">
+        <h2>Methods Used</h2>
+        <div class="method">
+            <h4>Reset</h4>
+            <p>A personal CSS reset was created to set some default rules. This allows a more consistent starting point across all browsers.</p>
+        </div>
+        <div class="method">
+            <h4>Utility Classes</h4>
+            <p>Utility classes were implemented for such things as: .container, .grid, .flex, .flow, .bg-color, .text-color, .font-sizes and font-families. Working with utilities massively increases the organization of your project and promotes predictability and consistency for both developers and end users.</p>
+        </div>
+        <div class="method">
+            <h4>Custom Properties</h4>
+            <p>Custom properties allow a value to be stored in one place, then referenced in multiple other places. An additional benefit is semantic identifiers. For example, --main-text-color is easier to understand than #00ff00, especially if this same color is also used in other contexts.</p>
+        </div>
+        <div class="method">
+            <h4>Comments</h4>
+            <p>As a programmer comments helps in making code easy to understand, easy to debug and also stimulate code readability between the programmer and others. Comments are also used to document programs and remind programmers of what tricky things they just did with the code and also helps the later generation for understanding and maintenance of code.</p>
+        </div>
+        <div class="method">
+            <h4>Components</h4>
+            <p>Component like styles were created for such things as button's, hr's and forms. This allowed general styling to these components, which could be used over and over again.</p>
+        </div>
+        <div class="method">
+            <h4>Media Queries (min-width)</h4>
+            <P>Media queries were used throughout each page in order to make the website full responsive on all devices.</P>
+        </div>
+        <div class="images">
+            <img src="../images/mac-electrical-one.png" alt="">
+            <img src="../images/mac-electrical-two.png" alt="">
+        </div>
+    </section>
+    <section class="lessons section container lessons__container">
+        <h2>Lessons Learned</h2>
+        <div class="lesson">
+            <h4>Commenting</h4>
+            <p>CSS comments let you organize or explain various segments of the stylesheet. When projects are beginning to grow bigger, comments are extremely valuable. Breaking up the stylesheet into different sections allows easier access and increases readability. Some comment headings I utilised were: custom properties, reset, utility classes, components, page specific, etc.</p>
+        </div>
+        <div class="lesson">
+            <h4>Custom Properties</h4>
+            <p>Custom properties allow a value to be stored in one place, then referenced in multiple other places. Realizing the power of these 'variables' is key to working with bigger projects. I utilised these variables for such things as: colors, font-families, font-sizes, and spacing. This created easy manipulation of the project from one point of contact in the stylesheet.</p>
+        </div>
+        <div class="lesson">
+            <h4>Reusable Components</h4>
+            <p>Designing reusable components is essential for the DRY (don't repeat yourself) principle. Styling certain components of the website allows them to be reused on multiple pages, and also allows for a base styling, which can manipulated with further specificity if required.</p>
+        </div>
+        <div class="images">
+            <img src="../images/mac-electrical-three.png" alt="">
+            <img src="../images/mac-electrical-four.png" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container flex">
+            <div class="footer__details">
+                <h3 class="uppercase">jeffrey vavasour</h3>
+                <p>jeffreyvavasour@gmail.com</p>
+                <p>083 185 6498</p>
+            </div>
+            <div class="footer__links">
+                <h4 class="capitalize">links</h4>
+                <ul class="footer__links-list flex">
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html" class="footer__links-list-link capitalize">home</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#about" class="footer__links-list-link capitalize">about</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#projects" class="footer__links-list-link capitalize">projects</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#contact" class="footer__links-list-link capitalize">contact</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#cv" class="footer__links-list-link capitalize">CV</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__socials">
+                <h4 class="capitalize">socials</h4>
+                <div class="footer__socials-links flex">
+                    <a href="https://www.linkedin.com/in/jeffrey-vavasour-b98031175/" target="_blank">
+                        <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/jeffreyvavasour" target="_blank">
+                        <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:jeffreyvavasour@gmail.com" target="_blank">
+                        <i class="fa fa-2x fa-envelope-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../dist/js/main.js"></script>
+</body>
+</html>

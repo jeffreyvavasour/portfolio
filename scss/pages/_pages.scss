@@ -1,0 +1,117 @@
+.page {
+    .hero {
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        place-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.8;
+        }
+
+        h1 {
+            color: var(--color-tertiary);
+            position: absolute;
+        }
+    }
+
+    .description {
+        &__content {
+            flex-direction: column;
+            --gap: 2rem;
+    
+            @include media-min($mq-medium) {
+                flex-direction: row;
+            }
+    
+            &-content {
+                flex-direction: column;
+                justify-content: center;
+                --gap: 0;
+    
+                @include media-min($mq-medium) {
+                    width: 65%;
+                    padding-block: 2rem;
+                }
+                @include media-min($mq-large) {
+                    padding-left: 5rem;
+                }
+            }
+        }
+
+        &__image {
+            height: 400px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+    
+            @include media-min($mq-medium) {
+                width: 35%;
+                height: auto;
+            }
+        }
+
+        .skill-icons {
+            --gap: 1rem;
+            justify-content: space-between;
+        }
+    
+        .skill-icon {
+            flex-direction: column;
+            align-items: center;
+            --gap: 0.5rem;
+            --flow-space: 0;
+    
+            p {
+                font-size: 16px;
+            }
+        }
+    
+        .fa-brands {
+            font-size: 2rem;
+    
+            @include media-min($mq-small) {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    h4 {
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .methods,
+    .lessons {
+        img {
+            margin-bottom: 2rem;
+
+            @include media-min($mq-medium) {
+                margin-bottom: 0;
+            }
+        }
+
+        .images {
+            @include media-min($mq-medium) {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+    .method,
+    .lesson {
+        margin-bottom: 2rem;
+
+        @include media-min($mq-large) {
+            width: 60%;
+        }
+    }
+}

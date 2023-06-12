@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Vavasour Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3cfde07445.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="portfolio-page page">
+    <a href="#header" class="top-of-page">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <header class="header container" id="header">
+        <div class="header__content flex">
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+                <div class="bar bar-1" id="bar-1"></div>
+                <div class="bar bar-2" id="bar-2"></div>
+                <div class="bar bar-3" id="bar-3"></div>
+            </button>
+            <a class="header__logo" href="../../index.html">JV</a>
+            <input type="checkbox" name="theme-toggle" id="theme-toggle">
+            <label for="theme-toggle" id="dark-mode"></label>
+            <nav class="nav" id="nav">
+                <ul class="nav__list flex" id="ul">
+                    <li class="nav__list-item"><a href="../../index.html" class="nav__link capitalize">home</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#about" class="nav__link capitalize">about</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#projects" class="nav__link capitalize">projects</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#contact" class="nav__link capitalize">contact</a></li>
+                    <li class="nav__list-item"><a href="../../index.html#cv" class="nav__link capitalize">cv</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero grid">
+        <h1>Portfolio</h1>
+    </div>
+    <section class="description section container description__container" id="description">
+        <div class="description__content flex">
+            <div class="description__image">
+
+            </div>
+            <div class="description__content-content flex flow">
+                <div class="skill-icons flex">
+                    <div class="skill-icon flex">
+                        <i class="fa-brands fa-html5 fa-3x"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-icon flex">
+                        <i class="fa-brands fa-sass fa-3x"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="skill-icon flex">
+                        <i class="fa-brands fa-js fa-3x"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <h3>Personal Portfolio</h3>
+                <p>My personal portfolio containing previous projects and information about myself and my skills.</p>
+            </div>
+        </div>
+    </section>
+    <section class="methods section container methods__container">
+        <h2>Methods Used</h2>
+        <div class="method">
+            <h4>SCSS</h4>
+            <p>A preprocessor of CSS, SCSS helps you write your CSS codes easily by letting you use loops, functions, imports, variables, and mathematical operations, thus making CSS writing more powerful. It extends the standard CSS characteristics by simply introducing the benefits of a basic programming language.</p>
+        </div>
+        <div class="method">
+            <h4>Dark Theme</h4>
+            <p>Dark themes are becoming one of the most popular things on the internet these days. The idea behind dark mode is that it reduces the light emitted by device screens while maintaining the minimum colour contrast ratios required for readability.</p>
+        </div>
+        <div class="images">
+            <img src="../images/portfolio-one.png" alt="">
+            <img src="../images/portfolio-two.png" alt="">
+        </div>
+    </section>
+    <section class="lessons section container lessons__container">
+        <h2>Lessons Learned</h2>
+        <div class="lesson">
+            <h4>Partials</h4>
+            <p>Partial SASS / SCSS is useful when the project files are enormous. Reusing or maintaining such huge SCSS files is cumbersome. Partial SCSS allows developers to split the variable, resets or page-wise SCSS separately and quickly embed them in the main SCSS. The main advantage in SASS is that partial SCSS files will not compile into new CSS files and therefore it becomes easier to manage.</p>
+        </div>
+        <div class="lesson">
+            <h4>Dark Theme</h4>
+            <p>My approach was to add a class to the body tag when a button was clicked. In order to change the theme to a dark theme, I manipulated the custom properties I had set up in my stylesheet. This allowed the use of custom properties for each of the specific themes. I liked this approach as it gave me the ability to customize each theme in one place if I wanted to change it.</p>
+        </div>
+        <div class="images">
+            <img src="../images/portfolio-three.png" alt="">
+            <img src="../images/portfolio-four.png" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container flex">
+            <div class="footer__details">
+                <h3 class="uppercase">jeffrey vavasour</h3>
+                <p>jeffreyvavasour@gmail.com</p>
+                <p>083 185 6498</p>
+            </div>
+            <div class="footer__links">
+                <h4 class="capitalize">links</h4>
+                <ul class="footer__links-list flex">
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html" class="footer__links-list-link capitalize">home</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#about" class="footer__links-list-link capitalize">about</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#projects" class="footer__links-list-link capitalize">projects</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#contact" class="footer__links-list-link capitalize">contact</a>
+                    </li>
+                    <li class="footer__links-list--item">
+                        <a href="../../index.html#cv" class="footer__links-list-link capitalize">CV</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__socials">
+                <h4 class="capitalize">socials</h4>
+                <div class="footer__socials-links flex">
+                    <a href="https://www.linkedin.com/in/jeffrey-vavasour-b98031175/" target="_blank">
+                        <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/jeffreyvavasour" target="_blank">
+                        <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:jeffreyvavasour@gmail.com" target="_blank">
+                        <i class="fa fa-2x fa-envelope-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../dist/js/main.js"></script>
+</body>
+</html>
