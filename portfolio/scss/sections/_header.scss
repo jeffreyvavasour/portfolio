@@ -1,0 +1,25 @@
+.header {
+    padding-block: 30px;
+    position: relative;
+
+    &__logo {
+        font-size: 2.5rem;
+
+        @include media-max($mq-medium) {
+            margin-left: auto;
+        }
+    }
+
+    &__content {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        @include transition;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}

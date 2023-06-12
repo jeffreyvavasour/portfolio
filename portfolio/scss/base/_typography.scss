@@ -1,0 +1,62 @@
+$font-main: 'Inter', sans-serif;
+$font-heading: 'Lora', sans-serif;
+$font-alt: 'Open Sans', sans-serif;
+
+body {
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading;
+    line-height: 1;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+
+    @include media-min($mq-medium) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    position: relative;
+    margin-bottom: 3rem;
+
+    @include media-min($mq-medium) {
+        font-size: 2.5rem;
+    }
+    @include media-min($mq-large) {
+        margin-bottom: 5rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100px;
+        bottom: -1rem;
+        left: 0;
+        background-color: var(--color-primary);
+    }
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+p {
+    font-weight: 300;
+}

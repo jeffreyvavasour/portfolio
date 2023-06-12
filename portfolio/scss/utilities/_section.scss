@@ -1,0 +1,7 @@
+.section {
+    padding-block: 60px;
+
+    @include media-min($mq-medium) {
+        padding-block: 100px;
+    }
+}

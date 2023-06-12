@@ -1,0 +1,69 @@
+.nav {
+    z-index: 999;
+    @include transition;
+
+    &__list {
+        --gap: 3rem;
+
+        @include media-max($mq-medium) {
+            flex-direction: column;
+            margin-top: 50%;
+            margin-left: 20%;
+        }
+        @include media-max($mq-small) {
+            margin-top: 65%;
+        }
+
+        &-item {
+            align-self: flex-start;
+        }
+    }
+
+    &__link {
+        position: relative;
+        @include transition;
+
+        &:hover {
+            color: var(--color-primary);
+
+            @include media-max($mq-large) {
+                color: var(--color-secondary);
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            background-color: var(--color-primary);
+            transform: scaleX(0);
+            transform-origin: center;
+            @include transition;
+        }
+
+        &:hover::after {
+            transform: scaleX(100%);
+
+            @include media-max($mq-large) {
+                transform: scaleX(0);
+            }
+        }
+    }
+
+    @include media-max($mq-medium) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70vw;
+        background-color: pink;
+        transform: translateX(-100%);
+    }
+
+    &.change {
+        transform: translateX(0);
+    }
+}
