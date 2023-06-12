@@ -670,7 +670,6 @@ label::after {
 .hero__scroll {
   position: absolute;
   bottom: 1rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
@@ -891,13 +890,13 @@ label::after {
 }
 @media screen and (min-width: 768px) {
   .page .methods img,
-.page .lessons img {
+  .page .lessons img {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .page .methods .images,
-.page .lessons .images {
+  .page .lessons .images {
     display: flex;
     gap: 2rem;
   }
@@ -908,7 +907,7 @@ label::after {
 }
 @media screen and (min-width: 1024px) {
   .page .method,
-.page .lesson {
+  .page .lesson {
     width: 60%;
   }
 }
